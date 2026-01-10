@@ -1,0 +1,163 @@
+# ============================================================
+# HYBRID AI AGENT - .gitignore
+# Updated: Initial Setup Phase
+# ============================================================
+
+# ==================== CRITICAL: NEVER UPLOAD ====================
+# Secrets and API Keys
+.env
+.env.local
+.env.production
+secrets.yaml
+api_keys.txt
+credentials.json
+config.local.yaml
+*.key
+*.pem
+
+# Personal Data
+data/personal/
+data/private/
+
+# ==================== PYTHON ====================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment (TOO LARGE - ~2GB)
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==================== PROJECT SPECIFIC ====================
+# Training artifacts (will be recreated)
+logs/
+*.log
+
+# Trained models (TOO LARGE - upload separately if needed)
+trained_models/
+checkpoints/
+*.pth
+*.pt
+*.h5
+*.pkl
+*.ckpt
+
+# Data files (can be large)
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.json
+# Keep small example data
+!data/manuals/*.txt
+!data/examples/
+
+# Tensorboard logs
+tensorboard_logs/
+runs/
+
+# ==================== IDE / EDITOR ====================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==================== OPERATING SYSTEM ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ==================== JUPYTER NOTEBOOKS ====================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Jupyter Notebook
+*.ipynb
+# Keep example notebooks if you create them later
+!examples/*.ipynb
+!notebooks/demo_*.ipynb
+
+# ==================== TESTING ====================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ==================== DOCUMENTATION ====================
+docs/_build/
+site/
+
+# ==================== TEMPORARY FILES ====================
+*.tmp
+*.temp
+*.cache
+*.bak
+*.backup
+
+# ==================== FUTURE: When You Add These ====================
+# (Commented out for now, uncomment when needed)
+
+# Google Colab notebooks (uploaded versions)
+# *_colab.ipynb
+
+# Experiment tracking (MLflow, Weights & Biases)
+# mlruns/
+# wandb/
+
+# Docker
+# *.dockerfile
+# docker-compose.override.yml
+
+# Database files
+# *.db
+# *.sqlite
+# *.sqlite3

@@ -1,0 +1,31 @@
+# Core Machine Learning - CPU optimized for your i3 laptop
+torch>=2.9.0
+torchvision>=0.19.0
+
+# Reinforcement Learning Framework
+gymnasium==0.29.1
+
+# Game Development
+pygame==2.5.2
+
+# Natural Language Processing (lightweight model)
+spacy==3.7.0
+
+# Web Framework for Dashboard
+fastapi==0.104.1
+uvicorn==0.24.0
+streamlit==1.28.0
+
+# Data Visualization
+matplotlib==3.8.0
+plotly==5.17.0
+
+# Core Data Science Libraries
+numpy==1.26.0
+pandas>=2.1.0
+
+# Configuration Management
+pyyaml==6.0.1
+
+# Development Tools
+pytest==7.4.3
