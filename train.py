@@ -214,7 +214,7 @@ if __name__ == "__main__":
     try:
         agent, rewards, scores = train_dqn(
             config=config,
-            num_episodes=1000,  # Start with 1000 for testing
+            num_episodes=1400,  # Start with 1400 for testing
             render=False  # Set to True to watch training (slower)
         )
     except KeyboardInterrupt:
